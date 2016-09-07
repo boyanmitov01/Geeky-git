@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html ng-app="ExampleApp">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+	var module=angular.module("ExampleApp", []);
+	module.controller("ExampleController",function($scope){
+	$scope.model={};
+	});
+</script>
+</head>
+
+
+<body ng-controller="ExampleController">
+	Enter text: <input type="text" ng-model="model.userInput"/><br/>
+	You entered: {{ model.userInput }}
+</body>
+
+
+
+</html> 
